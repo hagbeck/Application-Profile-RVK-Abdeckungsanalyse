@@ -1,0 +1,10 @@
+?bundle	?was_classified_by_event	?assigned_subject	?was_performed_by	?description
+cg_bundle:CG_4995116	activity:DE-601_308533771	sdnb:18	lobid_org:DE-601
+cg_bundle:CG_4995116	activity:DE-576_083062696	rvk:QC310	lobid_org:DE-576
+cg_bundle:CG_4995116	activity:DE-576_083062696	gnd:4122827-3	lobid_org:DE-576
+cg_bundle:CG_4995116	activity:DE-603_084860006	rvk:QV000	lobid_org:DE-603
+cg_bundle:CG_4995116	activity:DE-604_BV012931983	rvk:QV200	lobid_org:DE-604
+cg_bundle:CG_4995116	activity:DE-101_1167375963	sdnb:330	lobid_org:DE-101
+cg_bundle:CG_4995116	activity:DE-101_1167375963	gnd:4002737-5	lobid_org:DE-101
+cg_bundle:CG_4995116	activity:DE-101_e8e1bcbb-1e03-4e57-abbd-571f4d12fc2c	gnd:4002730-2	lobid_org:DE-101	maschinell gebildet
+cg_bundle:CG_4995116	activity:DE-101_d38816a3-8664-4224-9ee6-8401c431b08e	gnd:4002733-8	lobid_org:DE-101	maschinell gebildet
