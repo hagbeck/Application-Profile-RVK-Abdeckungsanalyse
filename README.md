@@ -1,15 +1,22 @@
 # Ein _Application Profile_ für die Abdeckungsanalyse des Bestands der UB Dortmund mit RVK-Notationen
 
-**Dipl.-Math. Hans-Georg Becker (M.L.I.S.)**\
-ORCID iD https://orcid.org/0000-0003-0432-294X
+**Dipl.-Math. Hans-Georg Becker (M.L.I.S.)**
 
-Technische Universität Dortmund\
-Universitätsbibliothek\
-Informationssysteme und Datenmanagement\
-https://www.ub.tu-dortmund.de
+ORCID iD [https://orcid.org/0000-0003-0432-294X](https://orcid.org/0000-0003-0432-294X)
 
-**Version**\
-1.0 - Initiale Version - 2020-05-24
+Technische Universität Dortmund
+
+Universitätsbibliothek
+
+Informationssysteme und Datenmanagement
+
+[https://www.ub.tu-dortmund.de](https://www.ub.tu-dortmund.de)
+
+**Version**
+
+* 1.1 - Korrekturen - 2020-05-28
+* 1.0 - Initiale Version - 2020-05-24
+
 
 **License**
 
@@ -73,7 +80,7 @@ Werkzeuge zur Schematransformation und -integration entwickelt werden können.
 
 Das CRM beruht auf zwei Hierarchien von Entitäten und Eigenschaften und erlaubt ein hohes Maß an semantischer 
 Präzision. Es eignet sich daher als eine Art Zwischenformat, dessen Verwendung die Anzahl der notwendigen 
-Mappings dramatisch reduziert, wenn verschiedene Quellformate und mehrere Zielsprachen benötigt werden. Die 
+Mappings deutlich reduziert, wenn verschiedene Quellformate und mehrere Zielsprachen benötigt werden. Die 
 wichtigste Eigenschaft des CIDOC CRM ist allerdings die Ereigniszentriertheit, d.h. es wird davon ausgegangen, 
 dass jedes Objekt nur dann existiert, wenn vorher ein Ereignis stattgefunden hat, welches das Objekt zum Resultat
 hat.
@@ -132,7 +139,7 @@ Reihen, Bände sein.
 Daher werden Datensätze zu Zeitschriften und Reihen als FRBRoo-Werke, _F18_Serial_Work_, modelliert. Da diese 
 Publikationsformen somit keine Exemplare im FRBR-Sinne haben, in Bibliotheken aber trotzdem Signaturen 
 vergeben werden, stellen diese hier nur eine einfache Relation zu den Sammlungen dar (und nicht wie die 
-Exemplare im Sinne von _is part of_.
+Exemplare im Sinne von _is part of_).
 
 Auch die Darstellung von mehrbändig begrenzten Werken weicht von der zu den "einfachen" Exemplaren ab. 
 Hierbei wird berücksichtigt, dass bei mehrbändig begrenzten Werken die inhaltliche Erschließung 
@@ -145,7 +152,7 @@ Bilddatei: [img/Datenmodell_virtuelle_Systematik_Holdings.jpg](img/Datenmodell_v
 ### Lokale Aufstellungssystematik
 
 Die Aufstellungssystematik der UB Dortmund ist proprietär und hat sich über die Jahre - nicht immer zum Guten - 
-weiter entwickelt. Der wesentliche Charakter der Systematik erschließt sich über die unterschiedlichen Philosphien 
+weiter entwickelt. Der wesentliche Charakter der Systematik erschließt sich über die unterschiedlichen Philosophien 
 der Bibliotheksstandorte. Während in der Zentralbibliothek hauptsächlich Freihandaufstellung, Lehrbuchsammlung 
 und Dissertationen sowie gebundene Zeitschriftenjahrgänge bereitgestellt wurden, sind aktuelle Forschungsliteratur 
 und Zeitschriftenhefte sowie besondere Bestände als Präsenzbestand in den Bereichsbibliotheken räumlich nah an den 
@@ -163,8 +170,8 @@ Hinzu kommt, dass sich die Systematik an einigen Stellen an formalen und nicht a
 
 Für die Modellierung der Aufstellungssystematik im Projekt zur Abdeckungsanalyse mit RVK-Notationen wurde daher
 auf den Charakter der Zuordnung der Bestände eher als physische Sammlungen anstatt auf thematische Kollektionen
-gesetzt. Die Bestände werden folglich als Sammlungen (_Collections_) und nicht mitels einer Klassifikation im
-Sinne von SKOS beschreiben.
+gesetzt. Die Bestände werden folglich als Sammlungen (_Collections_) und nicht mittels einer Klassifikation im
+Sinne von SKOS beschrieben.
 
 ![CultureGraph Bundle](img/Datenmodell_virtuelle_Systematik_Collections.jpg) 
 
@@ -173,8 +180,8 @@ Bilddatei: [img/Datenmodell_virtuelle_Systematik_Collections.jpg](img/Datenmodel
 ### Culture Graph
 
 Die Daten aus CultureGraph (CG) liegen aktuell nicht als RDF-Daten sondern als MARC-Auszug vor. 
-Für die Dantenanalyse werden die Werk-Cluster aus CG mittels der Bundle-Ontologie\[13\] und die einzelnen
-die Bündelmitglieder mittels Erlangen-FRBRoo beschrieben.  
+Für die Datenanalyse werden die Werk-Cluster aus CG mittels der Bundle-Ontologie\[13\] und die einzelnen
+Bündelmitglieder mittels Erlangen-FRBRoo beschrieben.  
 
 Die Tatsache, dass in den üblichen Bibliothekskatalogen die beiden FRBR-Klassen "Work" und "Expression" (WE) 
 nicht abgebildet werden (die Bibliothekskataloge erfassen Manifestationen und als Bestandsverzeichnis noch 
@@ -183,8 +190,9 @@ retrospektiv erfasst), hat zur Folge, dass für das FRBR-Modell nicht alle Entit
 die Abdeckungsanalyse notwendigen inhaltserschließenden Elemente aus CultureGraph müssten aber bei den „Works“ 
 erfasst werden.
 
-Die Nutzung von CIDOC CRM und FRBRoo als Referenzontologie ermöglicht es nun, auf die Abdeckungsanalyse die 
-FRBR-Klassen "Work" und "Expression" zu verzichten und diese durch die CG-Bundles „zu ersetzen“. 
+Die Nutzung von CIDOC CRM und FRBRoo als Referenzontologie ermöglicht es nun, auf die FRBR-Klassen 
+"Work" und "Expression" in der Abdeckungsanalyse zu verzichten und diese durch die CG-Bundles 
+"zu ersetzen". 
 
 Die für unsere Zwecke relevanten Daten zur inhaltlichen Erschließung werden mittels SKOS\[14\] modelliert und an 
 die Klassen des CIDOC CRM im Application Profile angehängt. 
@@ -226,7 +234,7 @@ SELECT * WHERE {
 ```
 liefert 
 
-| bundle:Bundle | prov:Activity | ?timestamp | prov:SoftwareAgent | prov:Agent (on_behalf_of) | 
+| bundle:Bundle | prov:Activity | timestamp | prov:SoftwareAgent | prov:Agent (on_behalf_of) | 
 |-----------------------|----------------------|--------------------------------------------|--------------------|-----------------| 
 | cg_bundle:CG_4995116> | activity:CG_4995116> | "2019-06-05T13:19:42.548Z"^^<xsd#dateTime> | agent:CG_4995116> | lobid_org:DE-101 | 
 
@@ -268,9 +276,12 @@ liefert
 
 ### Beispiel: RVK-Notationen zu einem Exemplar in der Emil-Figge-Bibliothek (EFB)
 
-Das Exemplar hat die Signatur "AA 600/5". 
+**Frage:** 
 
-SPARQL-Query:
+Gibt es RVK-Notationen zum Exemplar mit der Signatur "AA 600/5", welches aus einer der 
+erwähnten Bereichsbibliotheken mit einer stärker fachlich ausgeprägten Aufstellung stammt?
+
+**SPARQL-Query:**
 
 ```
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -289,14 +300,26 @@ SELECT DISTINCT ?shelfmark ?item ?manifestation ?bundle ?rvk WHERE {
 }
 ```
 
-Das Ergebnis befindet sich in der Tabelle [data/AA_600_5.tsv](data/AA_600_5.tsv).
+**Ergebnis:**
+
+| ?shelfmark | ?item         | ?manifestation      | ?bundle              | ?rvk        | 
+|------------|---------------|---------------------|----------------------|-------------| 
+| AA 600/5   | item:52537154 | lobid_r:HT000171397 | cg_wrk_bundle:109803 | rvk:AH26080 | 
+| AA 600/5   | item:52537154 | lobid_r:HT000171397 | cg_wrk_bundle:109803 | rvk:FN2501  | 
+| AA 600/5   | item:52537154 | lobid_r:HT000171397 | cg_wrk_bundle:109803 | rvk:FN2571  | 
+| AA 600/5   | item:52537154 | lobid_r:HT000171397 | cg_wrk_bundle:109803 | rvk:GB1498  | 
+| AA 600/5   | item:52537154 | lobid_r:HT000171397 | cg_wrk_bundle:109803 | rvk:HE309   | 
+| AA 600/5   | item:52537154 | lobid_r:HT000171397 | cg_wrk_bundle:109803 | rvk:ND3250  | 
+
+
+Das Ergebnis befindet sich auch in der Datei [data/AA_600_5.tsv](data/AA_600_5.tsv).
 
 ### Beispiel: Anzahl von RVK-erschlossenen Manifestationen zu Exemplaren einer Sammlung in der EFB.
 
 Gesucht wird die Anzahl an Titeln aus der Sammlung "Musik" (MU) der Emil-Figge-Bibliothek (EFB), 
 für die aus CultureGraph RVK-Notationen zu holen sind.
 
-SPARQL-Query:
+**SPARQL-Query:**
 
 ```
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -316,14 +339,45 @@ GROUP BY ?collection ?label
 ORDER BY ?label
 ```
 
-Das Ergebnis befindet sich in der Tabelle [data/EFB_MU.tsv](data/EFB_MU.tsv).
+**Ergebnis:**
+
+| ?label | ?cnt | 
+|--------|------| 
+| MUA    | 228  | 
+| MUB    | 144  | 
+| MUC    | 3    | 
+| MUD    | 68   | 
+| MUE    | 324  | 
+| MUF    | 689  | 
+| MUG    | 629  | 
+| MUH    | 185  | 
+| MUJ    | 79   | 
+| MUK    | 404  | 
+| MUL    | 353  | 
+| MUM    | 838  | 
+| MUN    | 704  | 
+| MUO    | 406  | 
+| MUP    | 390  | 
+| MUR    | 81   | 
+| MUS    | 69   | 
+| MUT    | 436  | 
+| MUU    | 57   | 
+| MUV    | 51   | 
+| MUW    | 117  | 
+| MUX    | 63   | 
+| MUY    | 211  | 
+
+
+Das Ergebnis befindet sich auch in der Datei [data/EFB_MU.tsv](data/EFB_MU.tsv).
 
 
 ### Inhaltserschließende Elemente zu einer Manifestation eines Exemplars
 
-Das Exemplar hat die Signatur "F 73317". 
+Gesucht sind die inhaltserschließenden Elemente für das Exemplar mit der 
+Signatur "F 73317". Ausgegeben werden sollen auch weitere Angaben zu maschinell erzeugten 
+Schlagwörtern.
 
-SPARQL-Query:
+**SPARQL-Query:**
 
 ```
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -344,8 +398,44 @@ SELECT DISTINCT ?shelfmark ?item ?manifestation ?bundle ?subject ?score ?prov WH
 }
 ```
 
-Das Ergebnis befindet sich in der Tabelle [data/F_73317.tsv](data/F_73317.tsv).
+**Ergebnis:**
 
+| ?shelfmark | ?item         | ?manifestation      | ?bundle                  | ?subject                                                 | ?score  | ?prov               | 
+|------------|---------------|---------------------|--------------------------|----------------------------------------------------------|---------|---------------------| 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/z/mat>           |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/rvk/QV000>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/rvk/QV200>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/sdnb/18>         |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/bkl/83.13>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/bkl/83.14>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4002737-5>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/ddc/17>          |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/sfb/SOP780>      |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4122827-3>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/BISAC/BUS069000> |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/BISAC/POL024000> |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/rvk/QC310>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/sdnb/17>         |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/sdnb/9.4a>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4322126-9>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/sdnb/330>        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <http://data.ub.tu-dortmund.de/resource/sswd/9.4a>       |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4002730-2>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4002733-8>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4112565-4>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4184470-1>                        |         |                     | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4002730-2>                        | 0.06402 | maschinell gebildet | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4002733-8>                        | 0.07572 | maschinell gebildet | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4002737-5>                        | 0.10497 | maschinell gebildet | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4112565-4>                        | 0.09057 | maschinell gebildet | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4184470-1>                        | 0.06249 | maschinell gebildet | 
+| F 73317    | item:10648006 | lobid_r:HT011238108 | cg_wrk_bundle:CG_4995116 | <https://d-nb.info/gnd/4322126-9>                        | 0.18638 | maschinell gebildet | 
+
+
+Das Ergebnis befindet sich auch in der Datei [data/F_73317.tsv](data/F_73317.tsv).
+
+Bei diesem Beispiel sieht man auch, dass alle maschinell erzeugten Schlagwörter auch intellektuell 
+in den am Bündel beteiligten Verbünden vergeben worden sind.
 
 ## Fazit
 
@@ -354,22 +444,15 @@ die Bestände der UB Dortmund so zu strukturieren, dass möglichst flexibel Abfr
 Anpassungen vorgenommen werden können. Der Linked Data-Ansatz mit dem CIDOC CRM als Referenzontologie
 hat sich dabei bewährt.
 
-Allerdings ist der Aufwand bei der Umssetzung nicht zu unterschätzen, da die Daten nur in geringem Maße
-bereits als Lined Data vorliegen und zunächst transformiert werden müssen. Zusätzlich sind selbst
-die Daten, die als Linked Data vorliegen, nicht mittels SPARQL abfragbar, so dass auch diese Daten
-lokal vorgehalten werden müssen und somit den lokalen Speicherbedarf nochmals erhöht.
+Allerdings ist der Aufwand bei der Umsetzung nicht zu unterschätzen, da die Daten nur in geringem Maße
+bereits als Linked Data vorliegen und zunächst transformiert werden müssen. Zusätzlich sind selbst
+die Daten, die als Linked Data vorliegen, nicht mittels SPARQL abfragbar (z.B. mit 
+Federated SPARQL Queries\[16\]), so dass auch diese Daten lokal vorgehalten werden müssen und 
+somit den lokalen Speicherbedarf nochmals erhöht.
 
 Die Ergebnisse der Abdeckungsanalyse können kurz zusammengefasst als sehr vielversprechend bezeichnet werden.
 Detailergebnisse sind auf GitHub \[17\] veröffentlicht.
 
-**TODO**
-
-* CIDOC CRM als Referenzontologie hat die gewünschte Flexibilität gebracht
-* Die lobid.org-Daten liegen zwar als Linked Data vor, sind jedoch nicht über einen SPARQL-Endpoint nutzbar. 
-Dadurch stehen sie nicht für den dezentralisierten Ansatz zur Datennutzung mittels der 
-Federated SPARQL\[16\]-Technologie zur Verfügung. Dieser Umstand zwingt uns dazu, einige Metadaten in der 
-eigenen GraphDB vorzuhalten.
-* Ergebnisse der Abdeckungsanalyse kurz zusammengefasst; Details in GitHub-Projekt: 
 
 ## Quellenverzeichnis
 
